@@ -35,3 +35,7 @@ page{
   border-radius: 50%;
   border:1px solid grey;
 }
+.nickName{
+  font-size: 30rpx;
+  color: darkgreen;
+}

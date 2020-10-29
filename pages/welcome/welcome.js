@@ -1,6 +1,6 @@
 
 Page({
-  onLoad:function(){
+  navigateTo(){
     // wx.showModal({
     //   title: '这是一个模态窗口',
     //   content:"欢迎来到微信小程序，是否进入文章",
@@ -17,6 +17,33 @@ Page({
     //     }
     //   }
     // })
+  },
+  getUserInfo(){
+    var that = this
+    wx.login({
+      success:function(res){
+          //用户拒绝授权时短时间无法重新授权，开发工具可以用清除缓存数据的方法清理
+        wx.getUserInfo({
+          //默认为true
+          withCredentials:true,
+          //要求登录态尚未过期
+          success:function(res){
+              //成功时用这个
+            console.log(res,'---success')
+            that.setData({
+              userInfo: res.userInfo
+            })
+          },
+          complete:function(res){
+              //失败时或结束就用这个
+            // console.log(res,'---complete')
+          }
+        })
+      }
+    })
+  },
+  onLoad:function(){
+    this.getUserInfo()
     
   },
   onTap:function(){

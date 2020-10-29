@@ -1,9 +1,12 @@
 <view class="container">
 	<view>
-		<image class="user-avatar" src="/pages/Image/avatar/avatar.png"></image>
+		<image class="user-avatar" src="{{userInfo.avatarUrl}}"></image>
 	</view>
 	<view class="send">
 
+		<view class="nickName">
+			{{userInfo.nickName}}
+		</view>
 		欢迎来到胡影
 
 	</view>
