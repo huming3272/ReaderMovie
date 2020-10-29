@@ -1,0 +1,22 @@
+<!-- <text>pages/movies/movie-list-template/movie-list-template.wxml</text> -->
+<import src="../movie-template/movie-template.wxml" />
+<template name="movieListTemplate">
+
+	<view class="movieList">
+		<view class="movieListHead"  catch:tap="onMoreTap" data-type="{{type}}" data-name="{{name}}">
+			<text class="state">{{type}}</text>
+			<view class="more">
+        <text>更多</text>
+				<image mode="widthFix" src="/pages/Image/icon/arrow-right.png"></image>
+			</view>
+		</view>
+		<view class="movieListContent">
+			<block wx:for="{{movies}}" wx:for-item="item" data-name="{{name}}" wx:for-index="mtIndex" >
+				<view class="singleMovieList"> 
+					<template is="movieTemplate" data="{{...item,name,mtIndex}}"></template>
+				</view>
+			</block>
+		</view>
+		
+	</view>
+</template>

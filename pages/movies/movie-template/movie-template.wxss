@@ -1,0 +1,9 @@
+/* pages/movies/movie-template/movie-Template.wxss */
+@import "/pages/movies/stars-template/stars-template.wxss";
+.movie-container{
+  padding-bottom: 20rpx;
+}
+.movie-container>image{
+  width: 100%;
+  height: 300rpx;
+}

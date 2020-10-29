@@ -1,0 +1,37 @@
+page{
+  background: #b3d4db;
+}
+.container{
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 50%;
+  /* border:1px solid red; */
+  justify-content: center;
+}
+.send{
+  margin-top: 75rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  font-family: Microsoft YaHei;
+}
+.start{
+  margin-top: 150rpx;
+  padding: 20rpx 30rpx 20rpx 30rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  font-family:Microsoft YaHei ;
+  border:1px solid #405f80;
+  border-radius: 5px;
+  background: #bcd8dd;
+
+}
+.user-avatar{
+  margin-top: 200rpx;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  border:1px solid grey;
+}

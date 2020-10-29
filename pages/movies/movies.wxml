@@ -1,0 +1,33 @@
+<!--pages/posts/movies/movies.wxml-->
+<import src="./movie-list-template/movie-list-template.wxml" />
+<import src="./movie-grid-template/movie-grid-template.wxml"></import>
+<view>
+  <view class="search-container">
+    <view class="search">
+      <input type="text" adjust-position="false" placeholder="血战钢锯岭、你的名字" value="{{inputValue}}" bindinput="onBindinput" bindfocus="onBindFocus" bindconfirm="searchMovies"></input>
+      <icon class="icon-search" type="search" size="20" color=""></icon>
+      <view class="search-button" wx:if="{{xHide}}" catch:tap="searchMovies">搜索</view>
+      <image wx:if="{{xHide}}" class="x-img" mode="widthFix" src="/pages/Image/icon/xx.png" catch:tap="onBindBlur"></image>
+    </view>
+    <view class="notFound" wx:if="{{notFound}}">
+      抱歉，没有找到您要的电影。
+    </view>
+    <view class="searchShow" wx:if="{{searchShow}}">
+      <template is="movieGridTemplate" data="{{...searchData}}"></template>
+    </view>
+  </view>
+  <block wx:if="{{!searchShow}}">
+    <view class="movie">
+      <template is="movieListTemplate" data="{{...in_theaters}}"></template>
+    </view>
+    <view class="movie">
+      <template is="movieListTemplate" data="{{...coming_soon}}"></template>
+    </view>
+    <view class="movie">
+      <template is="movieListTemplate" data="{{...top250}}"></template>
+    </view>
+  </block>
+  <!-- <view class="movie">
+    <template is="movieListTemplate"></template>
+  </view> -->
+</view>

@@ -1,0 +1,47 @@
+<!--pages/posts/posts.wxml-->
+<import src="./post-item/post-item-template.wxml" />
+<view>
+	<swiper catch:tap="onSwiperTap" indicator-dots="true" autoplay="true" circular="true" interval="2000" style="height:600rpx;width:100%">
+		<swiper-item>
+			<image mode="widthFix" src="../Image/wx.png" data-post-id="3"></image>
+		</swiper-item>
+		<swiper-item>
+			<image mode="widthFix" src="../Image/vr.png" data-post-id="4"></image>
+		</swiper-item>
+		<swiper-item>
+			<image mode="widthFix" src="../Image/iqiyi.png" data-post-id="5"></image>
+		</swiper-item>
+	</swiper>
+	<view class="container">
+		<block wx:for="{{postData}}" wx:for-item="item" wx:for-index="index">
+			<view catch:tap="onPostTap" data-post-id="{{item.postId}}">
+				<!-- 写在标签上的data-XXX数据都会被存储在默认事件的event.currentTarget.dataset中 -->
+				<template is="postItem" data="{{...item,index}}" />
+			</view>
+			<!-- 用扩展运算符"..." 解构数组，传递进post-item-template模板 -->
+		</block>
+		<!-- article1 -->
+		<!-- <view class="article">
+			<view class="date">
+				<image mode="widthFix" src="../Image/avatar/1.png"></image>
+				<text>Nov 20 2016</text>
+			</view>
+			<view class="title">
+				比利·林恩的中场故事
+			</view>
+			<view class="mainImg">
+				<image mode="widthFix" src="../Image/post/bl.png">
+				</image>
+			</view>
+			<view class="content">
+				一 “李安是一位绝不会重复自己的导演，本片将极富原创性李安众所瞩目的新片《比利林恩漫长的中场休息》，正式更名《半场无战事》。
+			</view>
+			<view class="like">
+				<image mode="widthFix" src="../Image/icon/chat.png"></image>
+				<text>92</text>
+				<image mode="widthFix" src="../Image/icon/view.png"></image>
+				<text>62</text>
+			</view>
+		</view> -->
+	</view>
+</view>

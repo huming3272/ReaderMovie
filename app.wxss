@@ -1,0 +1,9 @@
+text{
+  font-size: 24rpx;
+  font-family: Microsoft Yahei;
+}
+.clearfix::after{
+  content:"";
+  display: block;
+  clear: both;
+}

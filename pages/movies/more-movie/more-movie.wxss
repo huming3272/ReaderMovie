@@ -1,0 +1,8 @@
+/* pages/movies/movies/more-movie/more-movie.wxss */
+@import "../movie-grid-template/movie-grid-template.wxss";
+
+
+.more-movie{
+  padding-top: 20rpx;
+  border:1px solid red;
+}

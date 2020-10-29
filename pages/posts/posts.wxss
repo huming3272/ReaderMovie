@@ -1,0 +1,12 @@
+/* pages/posts/posts.wxss */
+@import "post-item/post-item-template.wxss";
+swiper-item {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+
+}
+
+swiper image {
+  width: 100%;
+}
+

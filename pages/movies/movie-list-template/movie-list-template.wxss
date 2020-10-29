@@ -1,0 +1,26 @@
+/* pages/movies/movie-list-template/movie-list-template.wxss */
+@import "/pages/movies/movie-template/movie-template.wxss";
+
+.movieList{
+  padding:0 20rpx 20rpx 20rpx;
+  margin-bottom: 20rpx;
+  background:#ffffff;
+}
+.movieListHead{
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  display:flex;
+  justify-content: space-between;
+}
+.more>image{
+  width: 10rpx;
+  margin-left: 10rpx;
+}
+.movieListContent{
+  display:flex;
+  justify-content: space-between;
+}
+.singleMovieList{
+  width: 28%;
+  padding-bottom: 20rpx;
+}

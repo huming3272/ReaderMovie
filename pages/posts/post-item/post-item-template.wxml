@@ -1,0 +1,25 @@
+<template name="postItem">
+	<view class="article" >
+		<!-- <text>文章{{index+1}}</text> -->
+		<view class="date">
+			<image mode="widthFix" src="{{avatar}}"></image>
+			<text>{{date}}</text>
+		</view>
+		<view class="title">
+			{{title}}
+		</view>
+		<view class="mainImg">
+			<image mode="widthFix" src="{{imgSrc}}">
+			</image>
+		</view>
+		<view class="content">
+			{{content}}
+		</view>
+		<view class="like">
+			<image mode="widthFix" src="/pages/Image/icon/chat.png"></image>
+			<text>{{collection}}</text>
+			<image mode="widthFix" src="/pages/Image/icon/view.png"></image>
+			<text>{{reading}}</text>
+		</view>
+	</view>
+</template>

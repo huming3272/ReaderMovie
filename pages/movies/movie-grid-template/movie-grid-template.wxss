@@ -1,0 +1,17 @@
+/* pages/movies/movie-grid/movie-grid'.wxss */
+@import "/pages/movies/movie-template/movie-template.wxss";
+
+.movie-grid-container{
+  padding: 0 20rpx;
+  /* overflow: hidden; */
+}
+
+.single-view-container{
+  float:left;
+  width: 28%;
+  margin:0 2.6%;
+}
+/* .single-view-container>image{
+  width: 100%;
+  height: 300rpx;
+}  */

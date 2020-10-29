@@ -1,0 +1,65 @@
+.article {
+  
+  /* border-bottom: 1px solid #ededed; */
+  border-top: 1px solid #ededed;
+  padding: 10px 0;
+}
+
+.article .date {
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx 0 20rpx;
+}
+
+.article .date image {
+  width: 80rpx;
+  /* vertical-align: middle; */
+}
+
+.article .date text {
+  /* letter-spacing: -1px; */
+  font-size: 28rpx;
+  margin-left: 20px;
+  color: #666;
+  /* vertical-align: middle; */
+}
+
+.article .title {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+  padding: 0 20rpx 0 20rpx;
+}
+
+.article .mainImg {
+  margin-top: 10px;
+}
+
+.article .mainImg image {
+  width: 100%;
+}
+
+.article .content {
+  color: #666;
+  font-size: 28rpx;
+  /* margin-bottom: 20rpx; */
+  /* margin-left: 20rpx; */
+  letter-spacing: 2rpx;
+  /* line-height: 40rpx; */
+  padding: 10rpx 20rpx 10rpx 20rpx;
+}
+.article .like{
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+}
+
+.article .like image{
+  width: 16px;
+  margin-right: 5px;
+}
+.article .like text{
+  font-size: 12px;
+  margin-right: 20px;
+}

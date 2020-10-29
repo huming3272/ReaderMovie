@@ -1,0 +1,56 @@
+/* pages/posts/movies/movies.wxss */
+@import "/pages/movies/movie-list-template/movie-list-template.wxss";
+@import "/pages/movies/movie-grid-template/movie-grid-template.wxss";
+page{
+  background: #f3f2f3;
+}
+.movie{
+  margin-bottom: 30rpx;
+}
+.search-container{
+  position: fixed;
+  position: relative;
+}
+.search{
+  position: relative;
+}
+.search input{
+  width: 68%;
+  font-size: 30rpx;
+  padding:20rpx 0 20rpx 60rpx;
+  position: relative;
+  z-index: 1;
+}
+
+.search .icon-search{
+  position: absolute;
+  top: 25rpx;
+  left: 10rpx;
+}
+.search .search-button{
+  position: absolute;
+  top: 15rpx;
+  right: 20rpx;
+  z-index: 2;
+  border:1px solid #405f80;
+  color: #405f80;
+  border-radius: 5px;
+  padding: 5rpx 10rpx 5rpx 10rpx;
+  display:inline-block;
+}
+.search .x-img{
+  position: absolute;
+  right: 130rpx;
+  top: 30rpx;
+  z-index: 2;
+  width: 30rpx;
+}
+.searchShow{
+  position: absolute;
+  top: 90rpx;
+  left: 0;
+  width: 100%;
+}
+.notFound{
+  padding-left: 50rpx;
+}

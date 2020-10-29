@@ -1,0 +1,13 @@
+/* pages/stars/stars.wxss */
+.stars image{
+  width: 20rpx;
+}
+.stars-container>text{
+  margin-left: 20rpx;
+}
+.stars-container{
+  width: 160rpx;
+  /* margin:0 auto; */
+  display: flex;
+  align-items: flex-end;
+}

@@ -1,0 +1,11 @@
+<!--pages/movies/movie-grid/movie-grid'.wxml-->
+<import src="../movie-template/movie-template.wxml" />
+<template name="movieGridTemplate">
+  <view class="movie-grid-container clearfix">
+    <block wx:for="{{movies}}" wx:for-item="movie" wx:for-index="mtIndex">
+      <view class="single-view-container">
+        <template is="movieTemplate" data="{{...movie,name,mtIndex}}" ></template>
+      </view>
+    </block>
+  </view>
+</template>

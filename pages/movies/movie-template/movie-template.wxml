@@ -1,0 +1,12 @@
+<!--pages/movies/movie-template/movie-Template.wxml-->
+<import src="../stars-template/stars-template.wxml" />
+<template name="movieTemplate">
+	<view class="movie-container">
+		<image src="{{image}}" data-current-img="{{[name,mtIndex]}}" data-movie-id="{{movieId}}" catch:tap="onMoviesTap" bind:error="errorImg">
+		</image>
+		<view>
+			<text>{{title}}</text>
+		</view>
+		<template is="starsTemplate" data="{{stars,average}}"></template>
+	</view>
+</template>
